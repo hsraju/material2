@@ -164,7 +164,7 @@ export class MatRipple implements OnInit, OnDestroy, RippleTarget {
    * @docs-private Implemented as part of RippleTarget
    */
   get rippleDisabled(): boolean {
-    return this.disabled || !!this._globalOptions.disabled;
+    return this.disabled || this._globalOptions.disabled;
   }
 
   /** Sets up the trigger event listeners if ripples are enabled. */
